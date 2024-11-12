@@ -1,0 +1,276 @@
+/* body, html {
+	background: #090d00;
+} */
+
+/* BACKGROUND */
+/* Parameters */
+:root {
+    --bg-dot-size: 2px;
+    --bg-dot-space: 50px;
+    /* Colors */
+    --bg-color: #222629;
+    --bg-dot-color: #474a4c;
+  }
+  
+  #particles-js {
+    width: 100%;
+    height: 1000vh;
+    background: 
+      linear-gradient(
+        90deg,
+        var(--bg-color) calc(var(--bg-dot-space) - var(--bg-dot-size)),
+        transparent 1%
+      ) center,
+      linear-gradient(
+        var(--bg-color) calc(var(--bg-dot-space) - var(--bg-dot-size)),
+        transparent 1%
+      ) center,
+      var(--bg-dot-color);
+    background-size: var(--bg-dot-space) var(--bg-dot-space);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  
+/* BACKGROUND */
+.page-width{margin: auto;height: auto;}
+section.upper .grid-wrapper{display: flex;background-color: transparent;height: 550px;}
+section.upper .grid-column-1{width: 100%;padding: 50px 0 50px 50px;display: flex;flex-direction: column;align-items: flex-start;justify-content: center;}
+section.upper .grid-column-1 h2{font-size: 30px; color: #fff;}
+section.upper .grid-column-1 p{font-size: 18px;color: #fff;}
+section.upper .grid-column-2{width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;}
+.grid-column-2 .main_image{width: 50%;}
+figure.main_image img {
+    border-radius: 30%;
+}
+section.middle .educate-wrapper{background-color: transparent;height: 550px;margin-top: 10px;padding: 40px 0;position: relative; color: #fff;}
+section.middle .educate-wrapper h3{margin: 0 50px;font-size: 30px;}
+/* Carousel Item Styling */
+.info-wrapper-2 {
+    display: flex;              /* Use flexbox for centering */
+    justify-content: center;     /* Center the content horizontally */
+}
+
+.info-wrapper-2 .item {
+    flex: 0 0 100%;            /* Each item takes full width of the container */
+    display: flex;              /* Flexbox for horizontal layout */
+    align-items: center;        /* Vertical alignment of content */
+    justify-content: space-between; /* Space between text and image */
+    padding: 40px 150px;              /* Padding around the slide */
+    background-color: #fff;     /* White background for each slide */
+    border-radius: 10px;        /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Light shadow for each slide */
+    min-height: 390px;  
+    gap: 40%;
+    margin: 40px;        /* Ensure enough height */
+}
+
+/* Text Section */
+.info-wrapper-2 .item .text-content {
+    max-width: 45%;             /* Text block takes up 45% of width */
+    flex: 1;                    /* Flex property for responsive behavior */
+}
+
+.info-wrapper-2 .item h2 {
+    font-size: 2.5rem;          /* Large heading */
+    font-weight: bold;          /* Bold heading */
+    color: #333;                /* Dark text color */
+    margin-bottom: 15px;
+}
+
+.info-wrapper-2 .item p {
+    font-size: 1.1rem;          /* Paragraph font size */
+    color: #666;                /* Lighter color for paragraph text */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.info-wrapper-2 .item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;  /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.owl-item {
+    width: 1647px;
+}
+/* Image Section */
+.info-wrapper-2 .item img {
+    max-width: 45%;             /* Image takes up 45% of the container */
+    height: auto;               /* Keep the image proportions */
+    border-radius: 8px;         /* Rounded corners for images */
+    object-fit: contain;        /* Make sure image fits without being cut off */
+}
+
+/* Navigation Arrows */
+.educate-wrapper .owl-prev, .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.educate-wrapper .owl-prev {
+    left: -40px;
+}
+
+.educate-wrapper .owl-next {
+    right: -40px;
+}
+
+/* Dots Styling */
+.educate-wrapper .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.educate-wrapper .owl-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    margin: 5px;
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.educate-wrapper .owl-dot.active {
+    background: transparent;
+    opacity: 1;
+}
+
+
+/* test */
+section.skill .skill-section{
+    background: transparent;
+    height: 350px;
+    color: #fff;
+    padding: 0px 50px;
+}
+
+.skill-section .skill-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    margin: 100px;
+}
+
+.skill-items {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: calc(33.33% - 40px);
+    width: 100%;
+}
+
+.skill-items button{
+padding: 10px 60px;
+border-radius: 8px;
+width: 210px;
+}
+
+section.working{color: #fff;margin: 0 50px;}
+
+.class-work {display: flex;    justify-content: center;
+    align-items: center;
+    gap: 40px;}
+.class-work img{width: 25%; border-radius: 8px;}
+
+@media only screen and (max-width: 768px)
+{
+    section.upper .grid-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    section.upper .grid-column-1{
+        width: auto;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    section.upper .grid-column-2{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    section.middle .educate-wrapper{
+        height: 670px;
+        margin-top: 10px;
+    }
+
+    .info-wrapper-2 .item {
+        display: flex;
+        margin: 20px;
+        flex-direction: column-reverse;
+        height: 550px;
+        gap: 10px;
+        justify-content: center;
+        padding: 40px;
+        max-width: 290px;
+    }
+    
+    .info-wrapper-2 .item img {
+        max-width: 70%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: contain;
+    }
+
+    section.skill .skill-section {
+        height: 500px;
+    }
+
+    .skill-section .skill-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 0 auto;
+    }
+    .skill-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: none;
+        width: auto;
+    }
+    .class-work {    flex-direction: column;}
+    .class-work img {
+        width: 100%;
+    }
+}
